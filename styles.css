@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: monospace;
+    background-color: black;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
-    border: 3px solid darkgray;
     width: 320px;
 }
 
@@ -28,35 +28,60 @@ body {
     width: 78.5px;
     height: 78.5px;
     border-radius: 0px;
-    border: 1px solid darkgray;
-    background-color: blanchedalmond;
+    border: 1px solid;
+    background-color: #035ee8;
     font-size: 26px;
+    margin: 5px;
+    color: white;
 }
-.square-btn {
+
+.operator:hover {
+    background-color: #2de2e6;
+
+}
+
+.number-btn, .period-btn, .ac-btn {
     width: 78.5px;
     height: 78.5px;
     border-radius: 0px;
-    border: 1px solid darkgray;
-    background-color: lightyellow;
+    border: 1px solid;
+    background-color: #d40078;
     font-size: 26px;
+    margin: 5px;
+    color: white;
+}
+
+.number-btn:hover, .period-btn:hover, .ac-btn:hover {
+    background-color: #2de2e6;
 }
 
 .screen {
-    height: 100px;
-    background-color: lightgray;
-    width: 314px;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
+    height: 90px;
+    background-color: white;
+    width: 344px;
+    margin: 5px;
+    color: 035ee8;
+    border: 1px solid;
+    font-size: 30px;
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+    align-items: center;
 }
 
 .equal-btn {
     width: 78.5px;
-    height: 314px;
+    height: 344px;
     border-radius: 0px;
-    border: 1px solid darkgray;
-    background-color: lightpink;
+    border: 1px solid;
+    background-color: #9700cc;
     font-size: 26px;
-    border-bottom-right-radius: 18px;
+    margin: 5px;
+    color: white;
+}
+
+.equal-btn:hover {
+    background-color: #2de2e6;
 }
 
 .keypad {
